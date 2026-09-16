@@ -39,10 +39,6 @@ public class FilmesApplication {
 			filmeRepository.save(new Filme(null, "Cidade dos Sonhos", 147, david));
 			filmeRepository.save(new Filme(null, "Interestelar", 169, christopher));
 
-			// -----------------------------------
-			// TESTE 1: Duração maior que 150
-			// -----------------------------------
-
 			System.out.println("\nFILMES COM DURACAO MAIOR QUE 150:");
 
 			List<Filme> filmesMaiores = filmeRepository.findByDuracaoGreaterThan(150);
